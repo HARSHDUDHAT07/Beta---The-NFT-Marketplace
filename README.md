@@ -1,4 +1,4 @@
-                                                                 **    # Beta---The-NFT-Marketplace #    **
+                                 **    # Beta---The-NFT-Marketplace #    **
                                                                  
 As a developer, creating a BETA NFT marketplace involves several steps:
 
