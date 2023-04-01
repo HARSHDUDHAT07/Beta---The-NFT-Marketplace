@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik:700&display=swap');
+
 body {
   margin: 0;
   font-family: Helvetica, sans-serif;
@@ -8,18 +9,19 @@ body {
 * {
   box-sizing: border-box;
 }
+
 /* start the button connect wallet */
 .button-36 {
   /* background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%); */
   background: linear-gradient(90deg, #48fc8b 10%, #1de7ea 89%);
-   color:black ;
+  color: black;
   border-radius: 8px;
   border-style: none;
   box-sizing: border-box;
   color: #ffffff;
   cursor: pointer;
   flex-shrink: 0;
-  font-family: "Inter UI","SF Pro Display",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+  font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 15px;
   font-weight: 500;
   height: 3rem;
@@ -42,39 +44,75 @@ body {
     padding: 0 2.6rem;
   }
 }
+
+.button-36_explore {
+  /* background-image: linear-gradient(92.88deg, #455EB5 9.16%, #5643CC 43.89%, #673FD7 64.72%); */
+  margin-left: 9rem;
+  background: linear-gradient(90deg, #48fc8b 10%, #1de7ea 89%);
+  color: black;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  flex-shrink: 0;
+  font-family: "Inter UI", "SF Pro Display", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  height: 3rem;
+  padding: 0 1.6rem;
+  text-align: center;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all .5s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-36_explore:hover {
+  box-shadow: rgb(185, 185, 185) 0 1px 30px;
+  transition-duration: .1s;
+}
+
+@media (min-width: 768px) {
+  .button-36_explore {
+    padding: 0 2.6rem;
+  }
+}
+
 /* of the button */
 
 /* hover */
 
 .glow-on-hover {
-    width: 220px;
-    height: 50px;
-    border: none;
-    outline: none;
-    color: #fff;
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
 }
 
 .glow-on-hover:before {
-    content: '';
-    background: linear-gradient(45deg, #69de49, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #47fff0);
-    position: absolute;
-    top: -2px;
-    left:-2px;
-    background-size: 400%;
-    color: black;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowing 20s linear infinite;
-    opacity: 0;
-    transition: opacity .3s ease-in-out;
-    border-radius: 10px;
+  content: '';
+  background: linear-gradient(45deg, #69de49, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #47fff0);
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  color: black;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
 }
 
 .glow-on-hover:active {
@@ -82,38 +120,47 @@ body {
 }
 
 .glow-on-hover:active:after {
-    background: transparent;
+  background: transparent;
 }
 
 .glow-on-hover:hover:before {
-    opacity: 1;
+  opacity: 1;
 }
 
 .glow-on-hover:after {
-    z-index: -1;
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    /* background: #111;
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: #111;
      */
   background: linear-gradient(90deg, #48fc8b, #1de7ea);
-    color:black;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
+  color: black;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
 }
 
 @keyframes glowing {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
 }
 
 /* hover end */
 .im {
   height: 50px;
 }
+
 h1,
 h2,
 h3 {
@@ -135,12 +182,10 @@ h2 {
 h2:not(.explore h2, .trial h2, footer h2)::before,
 .explore h3::before {
   content: "";
-  background: linear-gradient(
-    90deg,
-    rgba(72, 252, 139, 0) 0%,
-    #48fc8b 50%,
-    rgba(72, 252, 139, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(72, 252, 139, 0) 0%,
+      #48fc8b 50%,
+      rgba(72, 252, 139, 0) 100%);
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -222,12 +267,12 @@ header .container {
 .btn-secondary {
   border: 1px #1de7ea solid;
   color: rgb(98, 255, 218);
-  
+
 }
 
 .btn-secondary:hover {
   background: linear-gradient(90deg, #48fc8b, #1de7ea);
-   color: #111;
+  color: #111;
 }
 
 .btn-group .btn {
@@ -314,12 +359,10 @@ h1 {
 .bar {
   width: 0.4em;
   height: 4em;
-  background: linear-gradient(
-    Ødeg,
-    rgba(72, 252, 139, 0) 0%,
-    #48fc8b 50%,
-    rgba(72, 252, 139, 0) 100%
-  );
+  background: linear-gradient(Ødeg,
+      rgba(72, 252, 139, 0) 0%,
+      #48fc8b 50%,
+      rgba(72, 252, 139, 0) 100%);
   filter: drop-shadow (0 0 0.5em #48fc8b);
   margin: 0 2em;
 }
@@ -351,6 +394,15 @@ h1 {
   align-items: center;
   gap: 2em;
   margin: 10em 0 4em 0;
+}
+
+.cards_explore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  /* margin: 10em 0 4em 0; */
+  margin: 1cm;
 }
 
 .services .card {
@@ -700,6 +752,7 @@ h1 {
   padding: 6 em 1em;
   height: 270px;
 }
+
 .trial p {
   margin: 2em auto 3em auto;
   max-width: 700px;
@@ -836,12 +889,12 @@ footer p {
   outline-offset: 0px;
   text-shadow: none;
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
-} 
+}
 
 .btn-5:hover {
   border: 1px solid;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.847), 0 0 20px rgba(255, 255, 255, .2);
   outline-color: rgba(255, 255, 255, 0);
   outline-offset: 15px;
-  text-shadow: 1px 1px 2px #3d92b6; 
+  text-shadow: 1px 1px 2px #3d92b6;
 }
